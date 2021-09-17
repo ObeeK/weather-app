@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./assets/css/stylesheet.css" rel="stylesheet">
+    <title>Weather App</title>
 </head>
+
 <body>
-    <label for="weather-search">Search weather for cities:</label>
+    <header class="header"><h1 class="headerh1">Weather Dashboard</h1></header>
+    <div class="row">
+        <div class="col-4">
+            left side
+            <label for="weather-search">Search for a City:</label>
+            <input type="search" id="weather-search" aria-label="Search city for weather">
+            <button id="searchButton" type="submit" class="btn btn-info">Search</button>
+            <span id="city1"></span>
+            <span id="city2"></span>
+            <span id="city3"></span>
+            <span id="city4"></span>
+            <span id="city5"></span>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-12 border border-dark">
+                    <span id="citySearched">City & Date</span>
+                    <span id="temp"></span>
+                    <span id="wind"></span>
+                    <span id="humidity"></span>
+                    <span id="uvIndex"></span>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col-12">
+                    5-Day Forecast
+                    <div class="row">
+                    <div class="col-2 border border-dark">1</div>
+                    <div class="col-2 border border-dark">2</div>
+                    <div class="col-2 border border-dark">3</div>
+                    <div class="col-2 border border-dark">4</div>
+                    <div class="col-2 border border-dark">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <label for="weather-search">Search weather for cities:</label>
     <input type="search" id="weather-search" aria-label="Search city for weather">
-    <button id="searchButton">Search</button>
+    <button id="searchButton">Search</button> -->
     <script src="./assets/js/javascript.js"></script>
 </body>
+
 </html>
