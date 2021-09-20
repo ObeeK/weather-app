@@ -16,3 +16,7 @@ label {
 #weather-search {
     width: 100%;
 }
+
+.wInfo {
+    display: block;
+}

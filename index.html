@@ -27,31 +27,49 @@
         <div class="col-8">
             <div class="row">
                 <div class="col-12 border border-dark">
-                    <span id="citySearched">City & Date</span>
-                    <span id="temp"></span>
-                    <span id="wind"></span>
-                    <span id="humidity"></span>
-                    <span id="uvIndex"></span>
+                    <span id="citySearched" class="wInfo">City & Date</span>
+                    <span id="temp" class="wInfo">temp</span>
+                    <span id="wind" class="wInfo">wind</span>
+                    <span id="humidity" class="wInfo">humidity</span>
+                    <span id="uvIndex" class="wInfo">UV Index</span>
                 </div>
             </div>
-            <div class="row">    
+            <section id="forecast" class="row mt-3">
+
+            </section>
+            <!-- <div class="row">    
                 <div class="col-12">
                     5-Day Forecast
                     <div class="row">
-                    <div class="col-2 border border-dark">1</div>
-                    <div class="col-2 border border-dark">2</div>
-                    <div class="col-2 border border-dark">3</div>
-                    <div class="col-2 border border-dark">4</div>
-                    <div class="col-2 border border-dark">5</div>
+                    <div class="col-2 border border-dark" id="day1">1</div>
+                    <div class="col-2 border border-dark" id="day2">2</div>
+                    <div class="col-2 border border-dark" id="day3">3</div>
+                    <div class="col-2 border border-dark" id="day4">4</div>
+                    <div class="col-2 border border-dark" id="day5">5</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <!-- <label for="weather-search">Search weather for cities:</label>
     <input type="search" id="weather-search" aria-label="Search city for weather">
     <button id="searchButton">Search</button> -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+    integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+    crossorigin="anonymous"
+  ></script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+    integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+    crossorigin="anonymous"
+  ></script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+    integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+    crossorigin="anonymous"
+  ></script>
     <script src="./assets/js/javascript.js"></script>
 </body>
 
